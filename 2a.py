@@ -2,14 +2,9 @@
 # count the frequency of words in a given file.
 
 # Put your own path here.
-fname = '/Users/apple/Desktop/Python/SL/Faid'
- 
-num_words = 0
+from collections import Counter
+def word_count(fname):
+        with open(fname) as f:
+        	return Counter(f.read().split())
 
-with open(fname, 'r') as f:
-    for line in f:
-        words = line.split()
-        num_words += len(words)
-
-print("Number of words:")
-print(num_words)
+print("Number of words in the file : \n",word_count("Faid"), "\n")
