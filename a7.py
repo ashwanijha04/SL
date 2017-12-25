@@ -1,4 +1,4 @@
-# 5. 
+ 
 # Write a python program to define a student class that includes
 # name, usn and marks of 3 subjects.
 # Write functions calculate() - to calculate the sum of the marks
